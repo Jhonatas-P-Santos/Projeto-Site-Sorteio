@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loterica Pedicana</title>
+    <script type="text/javascript" src="scripts/script1.js"></script>
+    <link rel="stylesheet" href="scripts/script1.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+    <div id="logo">
+        <center><img src="images/logodesafio82.PNG" alt="Logo"></center>
+    </div>
+    <ul>
+        <li><a class="active" href="">NOVO JOGO</a></li>
+        <li><a href="">MEUS JOGOS</a></li>
+        <li><a href="">SOBRE</a></li>
+      </ul>
+  
+      <div class="container">
+  
+          <h3>Quais jogos deseja fazer:</h3>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox"  id="id1" name="jogos"  value="Mega Sena" /> 
+              <label class="form-check-label" for="id1">
+                    Mega Sena
+              </label>
+          </div>	
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox"  id="id2" name="jogos2"  value="Lotofacil" /> 
+              <label class="form-check-label" for="id2">
+                   Lotofacil
+              </label>
+          </div>	
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox"  id="id3" name="jogos3"  value="Quina" /> 
+              <label class="form-check-label" for="id3">
+                    Quina
+              </label>
+          
+          </div>
+          
+          <button type="button" class="btn btn-primary"  onclick="getRandom();">Criar Jogos</button>
+          <p>
+          <h3> Deseja Salvar os Jogos?</h3>
+          Sim:<input type="radio"  id="sc1"  name="Salvar"  value="Sim">
+          Não:<input type="radio"  id="sc2"  name="Salvar"  value="Não"><br/>
+          
+          <div id="visualizacao" class="d-flex align-content-start flex-wrap"></div>
+      </div>
+    
+</body>
+</html>

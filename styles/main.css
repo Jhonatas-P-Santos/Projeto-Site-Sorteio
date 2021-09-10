@@ -1,0 +1,36 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ff8000;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #ff9933;
+  }
+  
+  .active {
+    background-color: #ff9933;
+  }
+  
+  div.tabela{
+      float:right;
+  }
+  
+  #visualizacao table[id^="tbl-"]{
+      width: 250px;
+      margin: 10px;
+  }
