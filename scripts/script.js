@@ -1,11 +1,24 @@
 function getRandom() {
+    //Mega Sena
 	maxNum = 60;
 	qtdMax = 6
+	//Lotofácil
 	maxNum2 = 25;
 	qtdMax2 = 15
+	//Quina
 	maxNum3 = 80;
 	qtdMax3 = 5
-	
+	//Lotomania
+	maxNum4 = 99;
+	qtdMax4 = 20
+	//Dupla Sena
+	maxNum5 = 50;
+	qtdMax5 = 6
+    //Timemania
+	maxNum6 = 80;
+	qtdMax6 = 7
+
+
 	 let n = 1;
 	  const lista = [];
 	  const val = () => Math.floor(Math.random() * maxNum + 1);
@@ -74,6 +87,81 @@ function getRandom() {
 					criarTabela(lista3.join(', '), "tbl-quina", "Quina")
 				  // document.body.append(ck.value , ": " , lista3.join(', '), "    |   " );
 		}
+
+///////////Função da Lotomania adicionada//////////
+		let n4 = 1;
+		const lista4 = [];
+		const val4 = () => Math.floor(Math.random() * maxNum4 + 1);
+		var checkboxsSelecionados4 = document.getElementsByName('jogos4');
+		do {
+		  while (n4 <= qtdMax4) {
+			let numero = val3();
+  
+			if (lista4.indexOf(numero) === -1) {
+			  lista4.push(numero)
+			} else {n4 -= 1};
+			n4 += 1
+		  };
+		} while (lista4.length < qtdMax4);
+  
+		lista4.sort((a, b) => a - b);
+	   
+		for (var ck of checkboxsSelecionados4){
+			   if(ck.checked)
+					  criarTabela(lista4.join(', '), "tbl-lotomania", "Lotomania")
+					// document.body.append(ck.value , ": " , lista4.join(', '), "    |   " );
+		  }
+
+///////////Função da Dupla Sena adicionada//////////
+	  let n5 = 1;
+	  const lista5 = [];
+	  const val5 = () => Math.floor(Math.random() * maxNum5 + 1);
+	  var checkboxsSelecionados5 = document.getElementsByName('jogos5');
+	  do {
+	    while (n5 <= qtdMax5) {
+	      let numero = val5();
+
+	      if (lista5.indexOf(numero) === -1) {
+	        lista5.push(numero)
+	      } else {n5 -= 1};
+	      n5 += 1
+	    };
+	  } while (lista5.length < qtdMax5);
+
+	  lista5.sort((a, b) => a - b);
+	 
+	  for (var ck of checkboxsSelecionados5){
+			 if(ck.checked)
+					criarTabela(lista5.join(', '), "tbl-duplasena", "Dupla Sena")
+				  // document.body.append(ck.value , ": " , lista5.join(', '), "    |   " );
+		}
+
+
+///////////Função da Timemania adicionada//////////
+		let n6 = 1;
+		const lista6 = [];
+		const val6 = () => Math.floor(Math.random() * maxNum6 + 1);
+		var checkboxsSelecionados6 = document.getElementsByName('jogos6');
+		do {
+		  while (n6 <= qtdMax6) {
+			let numero = val6();
+  
+			if (lista6.indexOf(numero) === -1) {
+			  lista6.push(numero)
+			} else {n6 -= 1};
+			n6 += 1
+		  };
+		} while (lista6.length < qtdMax6);
+  
+		lista6.sort((a, b) => a - b);
+	   
+		for (var ck of checkboxsSelecionados6){
+			   if(ck.checked)
+					  criarTabela(lista6.join(', '), "tbl-timemania", "Timemania")
+					// document.body.append(ck.value , ": " , lista6.join(', '), "    |   " );
+		  }
+
+
 	}
 	
 function criarTabela(valores, idElemento, nomeElemento) {
