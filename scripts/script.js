@@ -40,7 +40,7 @@ function getRandom() {
 
 	for (var ck of checkboxsSelecionados) {
 		if (ck.checked)
-			criarTabela(lista.join(', '), "tbl-megasena", "Mega Sena")
+			criarTabela(lista.join(', '), "tbl-megasena", "Mega-Sena")
 		//document.body.append(ck.value , ": " , lista.join('  '), "    |   " );	 
 	}
 
@@ -172,7 +172,6 @@ function getRandom() {
 			criarTabela(lista6.join(', '), "tbl-timemania", "Timemania")
 		// document.body.append(ck.value , ": " , lista6.join(', '), "    |   " );
 	}
-
 
 }
 

@@ -23,6 +23,7 @@ header {
 #logo {
   color: #fff;
   font-weight: 100;
+  font-family: 'Kalam', cursive;
 }
 
 #jogos {
@@ -33,7 +34,7 @@ header {
     margin-top: -8rem;
 }
 
-.container h3 {
+h3 {
   margin-top: 3.2rem;
   margin-bottom: 0.8rem;
   font-weight: normal;
@@ -92,10 +93,39 @@ button {
   box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 
-/* TABLE ============= 
-table thead th{
+/* TABLE ========================= 
+#visualizacao {
+  width: 250px;
+  color: black;
   background: white;
   font-weight: normal;
+  text-align: left;
+}
+*/
+#tbl-megasena {
+  background: #80ff80;
+  color: #009900;
+}
+
+#tbl-lotofacil {
+  background: #eb99ff;
+  color: #7a0099;
+}
+
+.table-bordered {
+  width: 250px;
+  color: black;
+  background: white;
+  font-weight: normal;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+table thead th {
+  background: white;
+  font-weight: normal;
+
   padding: 1rem 2rem;
   text-align: left;
 
@@ -105,7 +135,15 @@ table td {
   background: white;
   padding: 1rem 2rem;
 }
-*/
+
+table tbody tr {
+  opacity: 0.7;
+}
+
+table tbody tr:hover {
+  opacity: 1;
+}
+
 
 /* ul {
     list-style-type: none;
