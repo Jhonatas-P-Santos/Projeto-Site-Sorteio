@@ -112,6 +112,26 @@ button {
   color: #7a0099;
 }
 
+#tbl-quina {
+  background: #b84dff;
+  color: #4c0080;
+}
+
+#tbl-lotomania {
+  background: #ff8533;
+  color: #993d00;
+}
+
+#tbl-duplasena {
+  background: #ff6666;
+  color: #990000;
+}
+
+#tbl-timemania {
+  background: #ffff66;
+  color: #33cc33;
+}
+
 .table-bordered {
   width: 250px;
   color: black;
