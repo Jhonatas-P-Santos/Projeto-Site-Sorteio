@@ -10,7 +10,9 @@ body {
 }
 
 header {
-  background: #3399ff;
+  animation: gradient 10s ease infinite;
+  background: linear-gradient(-45deg, #0000ff, #4d94ff, #23a6d5, #23d5ab) no-repeat;
+  background-size: 300% 300%;
   padding: 2rem 0 10rem;
   text-align: center;
 }
@@ -28,10 +30,10 @@ header {
 
 #jogos {
   background: white;
-    padding: 1.5rem 2rem;
-    border-radius: 0.25rem;
-    margin-bottom: 2rem;
-    margin-top: -8rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+  margin-top: -8rem;
 }
 
 h3 {
@@ -52,9 +54,9 @@ h3 {
 
 /* BUTTON =============== */
 button {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .button {
@@ -65,7 +67,7 @@ button {
   cursor: pointer;
   margin: 20px;
   height: 55px;
-  text-align:center;
+  text-align: center;
   border: none;
   background-size: 300% 100%;
 
@@ -164,6 +166,19 @@ table tbody tr:hover {
   opacity: 1;
 }
 
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
 
 /* ul {
     list-style-type: none;
