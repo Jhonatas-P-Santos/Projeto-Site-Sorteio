@@ -10,8 +10,9 @@ body {
 }
 
 header {
+
   animation: gradient 10s ease infinite;
-  background: linear-gradient(-45deg, #0000ff, #4d94ff, #23a6d5, #23d5ab) no-repeat;
+  background: linear-gradient(-45deg, #3385ff, #80b3ff, #23a6d5, #23d5ab) no-repeat;
   background-size: 300% 300%;
   padding: 2rem 0 10rem;
   text-align: center;
@@ -70,14 +71,12 @@ button {
   text-align: center;
   border: none;
   background-size: 300% 100%;
-
   border-radius: 50px;
   moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
-
 .button:hover {
   background-position: 100% 0;
   moz-transition: all .4s ease-in-out;
@@ -85,11 +84,9 @@ button {
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
-
 .button:focus {
   outline: none;
 }
-
 .button.gradient {
   background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
   box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
@@ -135,12 +132,11 @@ button {
 }
 
 .table-bordered {
-  width: 250px;
-  color: black;
-  background: white;
+  width: 300px;
   font-weight: normal;
   text-align: center;
   font-family: 'Poppins', sans-serif;
+  margin-bottom:18px;
 }
 
 
