@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loterica Pedicana</title>
-    <script type="text/javascript" src="scripts/script.js"></script>
+    
+    <!-- LINKS ============ -->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100;1,400&display=swap"
         rel="stylesheet">
@@ -13,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+    <!-- SCRIPTS ============ -->
+    <script type="text/javascript" src="scripts/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -37,46 +41,57 @@
         <section id="jogos">
 
             <h3>Quais jogos deseja fazer:</h3>
-            <div class="selection">
-                <input class="jogo" type="checkbox" id="id1" name="jogos" value="Mega Sena" />
-                <label class="jogo" for="id1">
-                    Mega-Sena
-                </label>
-            </div>
-            <div class="selection">
-                <input class="jogo" type="checkbox" id="id2" name="jogos2" value="Lotofacil" />
-                <label class="jogo" for="id2">
-                    Lotofácil
-                </label>
+
+            <div class="navbar=center">
+            <nav class="navbar" id="navbar-jogos">
+                
+                <!-- SELEÇÃO DE JOGOS  ============ -->
+
+                <div class="selection">
+                    <input class="jogo" type="checkbox" id="id1" name="jogos" value="Mega Sena" />
+                    <label class="jogo" for="id1">
+                        Mega-Sena
+                    </label>
+                </div>
+                <div class="selection">
+                    <input class="jogo" type="checkbox" id="id2" name="jogos2" value="Lotofacil" />
+                    <label class="jogo" for="id2">
+                        Lotofácil
+                    </label>
+                </div>
+    
+                <div class="selection">
+                    <input class="jogo" type="checkbox" id="id3" name="jogos3" value="Quina" />
+                    <label class="jogo" for="id3">
+                        Quina
+                    </label>
+                </div>
+    
+                <div class="selection">
+                    <input class="jogo" type="checkbox" id="id4" name="jogos4" value="Lotomania" />
+                    <label class="jogo" for="id4">
+                        Lotomania
+                    </label>
+                </div>
+    
+                <div class="selection">
+                    <input class="jogo" type="checkbox" id="id5" name="jogos5" value="Dupla Sena" />
+                    <label class="jogo" for="id5">
+                        Dupla Sena
+                    </label>
+                </div>
+    
+                <div class="selection">
+                    <input class="jogo" type="checkbox" id="id6" name="jogos6" value="Timemania" />
+                    <label class="jogo" for="id6">
+                        Timemania
+                    </label>
+                </div>
+
+              </nav>
             </div>
 
-            <div class="selection">
-                <input class="jogo" type="checkbox" id="id3" name="jogos3" value="Quina" />
-                <label class="jogo" for="id3">
-                    Quina
-                </label>
-            </div>
-
-            <div class="selection">
-                <input class="jogo" type="checkbox" id="id4" name="jogos4" value="Lotomania" />
-                <label class="jogo" for="id4">
-                    Lotomania
-                </label>
-            </div>
-
-            <div class="selection">
-                <input class="jogo" type="checkbox" id="id5" name="jogos5" value="Dupla Sena" />
-                <label class="jogo" for="id5">
-                    Dupla Sena
-                </label>
-            </div>
-
-            <div class="selection">
-                <input class="jogo" type="checkbox" id="id6" name="jogos6" value="Timemania" />
-                <label class="jogo" for="id6">
-                    Timemania
-                </label>
-            </div>
+           
 
             <button class="button gradient" type="button" onclick="getRandom();">Criar jogos aleatórios</button>
             <p>

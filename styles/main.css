@@ -1,3 +1,5 @@
+/* TAGS HTML ========= */
+
 * {
   margin: 0;
   padding: 0;
@@ -18,10 +20,14 @@ header {
   text-align: center;
 }
 
-.container {
-  width: min(90vw, 1200px);
-  margin: auto;
+h3 {
+  margin-top: 3.2rem;
+  margin-bottom: 0.8rem;
+  font-weight: normal;
+  text-align: center;
 }
+
+/* IDS ========= */
 
 #logo {
   color: #fff;
@@ -37,16 +43,31 @@ header {
   margin-top: -8rem;
 }
 
-h3 {
-  margin-top: 3.2rem;
-  margin-bottom: 0.8rem;
-  font-weight: normal;
+#navbar-jogos {
+  animation: gradient 10s ease infinite;
+  background: linear-gradient(-45deg, #3385ff, #80b3ff, #23a6d5, #23d5ab) no-repeat;
+  background-size: 300% 300%; 
+  padding: 1rem 1rem;
+  width: 840px;
 }
-
 #jogo {
   font-weight: normal;
   font-size: 1rem;
 }
+
+/* CLASSES ================= */
+.container {
+  width: min(90vw, 1200px);
+  margin: auto;
+}
+
+.navbar-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 
 .jogo {
   width: 100px;
@@ -92,15 +113,7 @@ button {
   box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 
-/* TABLE ========================= 
-#visualizacao {
-  width: 250px;
-  color: black;
-  background: white;
-  font-weight: normal;
-  text-align: left;
-}
-*/
+/* TABLES JOGOS =============*/
 #tbl-megasena {
   background: #80ff80;
   color: #009900;
@@ -139,29 +152,7 @@ button {
   margin-bottom:18px;
 }
 
-
-table thead th {
-  background: white;
-  font-weight: normal;
-
-  padding: 1rem 2rem;
-  text-align: left;
-
-}
-
-table td {
-  background: white;
-  padding: 1rem 2rem;
-}
-
-table tbody tr {
-  opacity: 0.7;
-}
-
-table tbody tr:hover {
-  opacity: 1;
-}
-
+/* AJUSTE DA ANIMAÇÃO GRADIENT */
 @keyframes gradient {
   0% {
     background-position: 0 50%;
@@ -175,41 +166,3 @@ table tbody tr:hover {
     background-position: 0 50%;
   }
 }
-
-/* ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ff8000;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #ff9933;
-  }
-  
-  .active {
-    background-color: #ff9933;
-  }
-  
-  div.tabela{
-      float:right;
-  }
-  
-  #visualizacao table[id^="tbl-"]{
-      width: 250px;
-      margin: 10px;
-  }
-  */
