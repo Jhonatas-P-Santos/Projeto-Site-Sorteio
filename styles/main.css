@@ -19,7 +19,7 @@ header {
 }
 
 .container {
-  width: min(90vw, 800px);
+  width: min(90vw, 1200px);
   margin: auto;
 }
 
@@ -31,7 +31,7 @@ header {
 
 #jogos {
   background: white;
-  padding: 1.5rem 2rem;
+  padding: 2rem 2rem;
   border-radius: 0.25rem;
   margin-bottom: 2rem;
   margin-top: -8rem;
